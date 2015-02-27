@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests">
+        <methods>
+          <include name="before"/>
+          <include name="calendar"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

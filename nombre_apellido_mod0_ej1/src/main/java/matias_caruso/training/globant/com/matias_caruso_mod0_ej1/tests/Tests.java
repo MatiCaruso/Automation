@@ -22,7 +22,7 @@ import org.testng.annotations.Test;
 public class Tests {
 	WebDriver driver;
 	HomePage homePage;
-
+	String as="sasasa";
 	@BeforeMethod
 	public void before() {
 		driver = new FirefoxDriver();

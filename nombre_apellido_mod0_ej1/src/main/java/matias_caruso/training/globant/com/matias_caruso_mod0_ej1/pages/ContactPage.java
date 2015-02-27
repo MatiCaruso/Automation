@@ -1,12 +1,9 @@
 package matias_caruso.training.globant.com.matias_caruso_mod0_ej1.pages;
 
-import java.util.List;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.pagefactory.ByAll;
+
 
 public class ContactPage {
 

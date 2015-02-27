@@ -7,15 +7,15 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage {
 
-	@FindBy(xpath="//*[@id='site-title']/span/a")
+	@FindBy(id="site-title")
 	private WebElement title;
 	@FindBy(id="s")
 	private WebElement search;
 	@FindBy(xpath="//time[@class='entry-date']")
 	private WebElement date;
-	@FindBy(xpath="//*[@id='post-41']/header/h1/a")
+	@FindBy(xpath="//a[@href='http://10.28.148.127/wordpress/it-is-used-for/']")
 	private WebElement post01;
-	@FindBy(xpath="//*[@id='access']/div[3]/ul/li[2]/a")
+	@FindBy(xpath="//a[@href='http://10.28.148.127/wordpress/sample-page/']")
 	private WebElement contact;
 	
 	
@@ -39,7 +39,6 @@ public class HomePage {
 		this.contact.click();
 	}
 	public String getDay(){
-		System.out.println(this.date.getText());
 		return this.date.getText();
 	}
 	

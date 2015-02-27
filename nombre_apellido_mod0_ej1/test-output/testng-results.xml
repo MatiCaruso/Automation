@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14551" started-at="2015-02-27T19:34:50Z" finished-at="2015-02-27T19:35:05Z">
+  <suite name="Default suite" duration-ms="15547" started-at="2015-02-27T20:07:23Z" finished-at="2015-02-27T20:07:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14551" started-at="2015-02-27T19:34:50Z" finished-at="2015-02-27T19:35:05Z">
+    <test name="Default test" duration-ms="15547" started-at="2015-02-27T20:07:23Z" finished-at="2015-02-27T20:07:38Z">
       <class name="matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests">
-        <test-method status="PASS" signature="before()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@10fe215]" name="before" is-config="true" duration-ms="11305" started-at="2015-02-27T16:34:50Z" finished-at="2015-02-27T16:35:01Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@edc88b]" name="before" is-config="true" duration-ms="10032" started-at="2015-02-27T17:07:23Z" finished-at="2015-02-27T17:07:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="date()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@10fe215]" name="date" duration-ms="2846" started-at="2015-02-27T16:35:01Z" finished-at="2015-02-27T16:35:04Z">
+        <test-method status="PASS" signature="calendar()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@edc88b]" name="calendar" duration-ms="5202" started-at="2015-02-27T17:07:33Z" finished-at="2015-02-27T17:07:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- date -->
-        <test-method status="PASS" signature="after()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@10fe215]" name="after" is-config="true" duration-ms="378" started-at="2015-02-27T16:35:04Z" finished-at="2015-02-27T16:35:05Z">
+        </test-method> <!-- calendar -->
+        <test-method status="PASS" signature="after()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@edc88b]" name="after" is-config="true" duration-ms="295" started-at="2015-02-27T17:07:38Z" finished-at="2015-02-27T17:07:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

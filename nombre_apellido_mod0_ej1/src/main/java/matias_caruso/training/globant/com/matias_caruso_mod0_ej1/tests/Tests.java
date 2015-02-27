@@ -22,6 +22,7 @@ import org.testng.annotations.Test;
 public class Tests {
 	WebDriver driver;
 	HomePage homePage;
+	int lalala=1;
 
 	@BeforeMethod
 	public void before() {

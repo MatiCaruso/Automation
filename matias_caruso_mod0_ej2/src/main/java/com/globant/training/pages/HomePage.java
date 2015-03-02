@@ -33,7 +33,7 @@ public class HomePage {
 		
 		int i=0;
 		while (i <= lista.size()){
-			System.out.println(i);
+			
 			if ("Sign in".equals(lista.get(i).getText())){
 				lista.get(i).click();
 				System.out.println("click");

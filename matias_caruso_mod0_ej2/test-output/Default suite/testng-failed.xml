@@ -5,7 +5,7 @@
     <classes>
       <class name="com.globant.training.tests.Tests">
         <methods>
-          <include name="signIn"/>
+          <include name="errorSignIn"/>
           <include name="after"/>
           <include name="before"/>
         </methods>

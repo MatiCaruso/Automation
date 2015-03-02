@@ -14,8 +14,7 @@ public class SignInPage {
 	private WebElement main;
 	@FindBy(className="control textInput textInput-large textInput-full passwordField")
 	private WebElement pass;
-//	@FindBy(xpath="//main[@type='submit' and @value='Sign in']")
-//	private WebElement button;
+	
 	
 	public void signIn(String mail,String pass){
 		
@@ -26,15 +25,14 @@ public class SignInPage {
 			WebElement element = form.get(index);
 			if("email".equals(element.getAttribute("type"))){
 				element.sendKeys(mail);
-				System.out.println("escribe mail");
+//				System.out.println("completa mail");
 			}
 			if("password".equals(element.getAttribute("type"))){
 				element.sendKeys(pass);
-				System.out.println("escribe pass");
-//				break;
+//				System.out.println("completa pass");
 			}
 			if("submit".equals(element.getAttribute("type")) && "Sign in".equals(element.getAttribute("value"))){
-				System.out.println("clikea boton");
+//				System.out.println("clikea boton");
 				element.click();
 				break;
 			}
@@ -42,4 +40,23 @@ public class SignInPage {
 		}
 	
 	}
+	
+	public boolean errorSignIn(){
+		List<WebElement> form = main.findElements(ByAll.tagName("span"));
+		System.out.println(form.size());
+		int index =0;
+		while(index <= form.size()){
+			WebElement element = form.get(index);
+			System.out.println(index);
+			if("Error:".equals(element.getText())){
+				System.out.println("Error");
+				return true;
+			}
+			index++;
+		}
+		return false;
+
+	}
+	
+	
 }

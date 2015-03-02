@@ -8,6 +8,7 @@ import matias_caruso.training.globant.com.matias_caruso_mod0_ej1.pages.OctoberPa
 import matias_caruso.training.globant.com.matias_caruso_mod0_ej1.pages.PostPage;
 import matias_caruso.training.globant.com.matias_caruso_mod0_ej1.pages.SearchPage;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -97,7 +98,11 @@ public class Tests {
 		fechaPost.click();
 		List<WebElement> posts = driver.findElements(ByAll.tagName("article"));
 		int size = posts.size();
-		System.out.println(size);
+		int i=0;
+		while(i < posts.size()){
+		System.out.println(posts.get(i).findElement(By.className("entry-title")).getText());
+		i++;
+		}
 		Assert.assertEquals(size, 2);
 
 	}

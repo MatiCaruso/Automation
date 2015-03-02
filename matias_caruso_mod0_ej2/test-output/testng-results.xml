@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="89780" started-at="2015-03-02T18:58:10Z" finished-at="2015-03-02T18:59:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="89780" started-at="2015-03-02T18:58:10Z" finished-at="2015-03-02T18:59:39Z">
+      <class name="com.globant.training.tests.Tests">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.tests.Tests@109506a]" name="before" is-config="true" duration-ms="24528" started-at="2015-03-02T15:58:10Z" finished-at="2015-03-02T15:58:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="signIn()[pri:0, instance:com.globant.training.tests.Tests@109506a]" name="signIn" duration-ms="64472" started-at="2015-03-02T15:58:34Z" finished-at="2015-03-02T15:59:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.tests.Tests@109506a]" name="after" is-config="true" duration-ms="739" started-at="2015-03-02T15:59:39Z" finished-at="2015-03-02T15:59:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.globant.training.tests.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

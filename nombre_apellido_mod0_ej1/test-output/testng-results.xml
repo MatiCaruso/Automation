@@ -1,21 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
+    <line>
+      <![CDATA[busqueda sin resultado]]>
+    </line>
+    <line>
+      <![CDATA[carga de pagina principal]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15290" started-at="2015-03-02T13:04:29Z" finished-at="2015-03-02T13:04:44Z">
+  <suite name="Default suite" duration-ms="96539" started-at="2015-03-02T14:30:11Z" finished-at="2015-03-02T14:31:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15290" started-at="2015-03-02T13:04:29Z" finished-at="2015-03-02T13:04:44Z">
+    <test name="Default test" duration-ms="96539" started-at="2015-03-02T14:30:11Z" finished-at="2015-03-02T14:31:47Z">
       <class name="matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests">
-        <test-method status="PASS" signature="before()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@7e9505]" name="before" is-config="true" duration-ms="9628" started-at="2015-03-02T10:04:29Z" finished-at="2015-03-02T10:04:39Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="before" is-config="true" duration-ms="9321" started-at="2015-03-02T11:30:11Z" finished-at="2015-03-02T11:30:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="calendar()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@7e9505]" name="calendar" duration-ms="5373" started-at="2015-03-02T10:04:39Z" finished-at="2015-03-02T10:04:44Z">
+        <test-method status="PASS" signature="calendar()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="calendar" duration-ms="5446" started-at="2015-03-02T11:30:20Z" finished-at="2015-03-02T11:30:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calendar -->
-        <test-method status="PASS" signature="after()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@7e9505]" name="after" is-config="true" duration-ms="272" started-at="2015-03-02T10:04:44Z" finished-at="2015-03-02T10:04:44Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="after" is-config="true" duration-ms="262" started-at="2015-03-02T11:30:26Z" finished-at="2015-03-02T11:30:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="before" is-config="true" duration-ms="8241" started-at="2015-03-02T11:30:26Z" finished-at="2015-03-02T11:30:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="contact()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="contact" duration-ms="13398" started-at="2015-03-02T11:30:34Z" finished-at="2015-03-02T11:30:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contact -->
+        <test-method status="PASS" signature="after()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="after" is-config="true" duration-ms="279" started-at="2015-03-02T11:30:47Z" finished-at="2015-03-02T11:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="before" is-config="true" duration-ms="8359" started-at="2015-03-02T11:30:48Z" finished-at="2015-03-02T11:30:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="date()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="date" duration-ms="2817" started-at="2015-03-02T11:30:56Z" finished-at="2015-03-02T11:30:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- date -->
+        <test-method status="PASS" signature="after()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="after" is-config="true" duration-ms="266" started-at="2015-03-02T11:30:59Z" finished-at="2015-03-02T11:30:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="before" is-config="true" duration-ms="8577" started-at="2015-03-02T11:30:59Z" finished-at="2015-03-02T11:31:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="testSearch()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="testSearch" duration-ms="2803" started-at="2015-03-02T11:31:08Z" finished-at="2015-03-02T11:31:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[busqueda sin resultado]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method status="PASS" signature="after()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="after" is-config="true" duration-ms="268" started-at="2015-03-02T11:31:11Z" finished-at="2015-03-02T11:31:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="before" is-config="true" duration-ms="8228" started-at="2015-03-02T11:31:11Z" finished-at="2015-03-02T11:31:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="testTitle()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="testTitle" duration-ms="26" started-at="2015-03-02T11:31:19Z" finished-at="2015-03-02T11:31:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[carga de pagina principal]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testTitle -->
+        <test-method status="PASS" signature="after()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="after" is-config="true" duration-ms="257" started-at="2015-03-02T11:31:19Z" finished-at="2015-03-02T11:31:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="before" is-config="true" duration-ms="10256" started-at="2015-03-02T11:31:19Z" finished-at="2015-03-02T11:31:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="validation()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="validation" duration-ms="17385" started-at="2015-03-02T11:31:30Z" finished-at="2015-03-02T11:31:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validation -->
+        <test-method status="PASS" signature="after()[pri:0, instance:matias_caruso.training.globant.com.matias_caruso_mod0_ej1.tests.Tests@aa5e75]" name="after" is-config="true" duration-ms="321" started-at="2015-03-02T11:31:47Z" finished-at="2015-03-02T11:31:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

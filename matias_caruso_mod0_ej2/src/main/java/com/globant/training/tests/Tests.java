@@ -14,13 +14,21 @@ import org.testng.annotations.Test;
 
 import com.globant.training.pages.HomePage;
 import com.globant.training.pages.LogoutPage;
+import com.globant.training.pages.ResultPage;
 import com.globant.training.pages.SignInPage;
 
 public class Tests {
 	WebDriver driver;
 	HomePage homePage;
 	
-	
+	public void pausa(int s) {
+		 try {
+		 	Thread.sleep(s*1000);
+		 } catch (InterruptedException e) {
+		 	
+		 	e.printStackTrace();
+		 }
+		}
 	public void wait(WebDriver driver){
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	}
@@ -31,7 +39,7 @@ public class Tests {
 		wait(driver);
 		homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.go(driver);
-		
+		driver.manage().window().maximize();
 	}
 	
 	@AfterMethod
@@ -42,6 +50,7 @@ public class Tests {
 	@Test
 	public void signIn() {
 		homePage.signIn();
+		pausa(5);
 		wait(driver);
 		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
 		wait(driver);
@@ -54,6 +63,7 @@ public class Tests {
 	@Test
 	public void errorSignIn(){
 		homePage.signIn();
+		pausa(5);
 		wait(driver);
 		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
 		signPage.signIn("banana@gmail.com", "Automation");
@@ -63,12 +73,14 @@ public class Tests {
 	@Test
 	public void logout(){
 		homePage.signIn();
+		pausa(4);
 		wait(driver);
 		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
 		wait(driver);
 		signPage.signIn("m.villarruel.test@gmail.com", "Automation");
 		wait(driver);
 		homePage.signout();
+		pausa(4);
 		LogoutPage logout= PageFactory.initElements(driver, LogoutPage.class);
 		Assert.assertEquals(logout.logout(),true);
 	}
@@ -76,10 +88,13 @@ public class Tests {
 	public void search(){
 		homePage.searchAir();
 		wait(driver);
+		homePage.setFromAndTo("LAS","LAX");
+		wait(driver);
 		homePage.dates();
+		ResultPage resultPage = PageFactory.initElements(driver, ResultPage.class);
+		wait(driver);
+		Assert.assertEquals(resultPage.validacion01(),true);
+		Assert.assertEquals(resultPage.validacion02(),true);
 		
 	}
-	
-	
-	
 }

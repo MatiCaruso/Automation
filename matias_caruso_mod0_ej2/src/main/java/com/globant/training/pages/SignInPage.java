@@ -27,7 +27,6 @@ public class SignInPage {
 	public void signIn(String mail,String pass){
 		
 		List<WebElement> form = main.findElements(ByAll.tagName("input"));
-		System.out.println(form.size());
 		int index =0;
 		while(index <= form.size()){
 			WebElement element = form.get(index);
@@ -57,7 +56,6 @@ public class SignInPage {
 		while(index <= form.size()){
 			WebElement element = form.get(index);
 			if("The e-mail and password you have entered do not match. Please try again.".equals(element.getText())){
-				System.out.println("Error");
 				return true;
 			}
 			index++;

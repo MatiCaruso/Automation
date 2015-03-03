@@ -11,9 +11,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.pagefactory.ByAll;
 
-import com.globant.training.tests.Tests;
-
-
 public class HomePage {
 		
 	@FindBy(id="headerStandard")
@@ -52,8 +49,6 @@ public class HomePage {
 			
 			if ("Sign in".equals(lista.get(i).getText())){
 				lista.get(i).click();
-				System.out.println("click");
-			
 				break;
 			}
 			i++;

@@ -11,7 +11,9 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import com.globant.training.pages.HomePage;
+import com.globant.training.pages.LogoutPage;
 import com.globant.training.pages.SignInPage;
 
 public class Tests {
@@ -19,12 +21,17 @@ public class Tests {
 	HomePage homePage;
 	
 	
+	public void wait(WebDriver driver){
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+	}
+	
 	@BeforeMethod
 	public void before() {
 		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		wait(driver);
 		homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.go(driver);
+		
 	}
 	
 	@AfterMethod
@@ -32,28 +39,47 @@ public class Tests {
 		driver.quit();
 	}
 	
-//	@Test
-//	public void signIn() {
-//		homePage.signIn();
-//		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
-//		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
-//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//		signPage.signIn("m.villarruel.test@gmail.com", "Automation");
-//		
-//		Assert.assertEquals(homePage.welcome(driver), true);
-//		
-//	}
+	@Test
+	public void signIn() {
+		homePage.signIn();
+		wait(driver);
+		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
+		wait(driver);
+		signPage.signIn("m.villarruel.test@gmail.com", "Automation");
+		
+		Assert.assertEquals(homePage.welcome(driver), true);
+		
+	}
 	
 	@Test
 	public void errorSignIn(){
 		homePage.signIn();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);		
+		wait(driver);
 		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
-		
 		signPage.signIn("banana@gmail.com", "Automation");
 		Assert.assertEquals(signPage.errorSignIn(),true);
-		
+	}
+	
+	@Test
+	public void logout(){
+		homePage.signIn();
+		wait(driver);
+		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
+		wait(driver);
+		signPage.signIn("m.villarruel.test@gmail.com", "Automation");
+		wait(driver);
+		homePage.signout();
+		LogoutPage logout= PageFactory.initElements(driver, LogoutPage.class);
+		Assert.assertEquals(logout.logout(),true);
+	}
+	@Test
+	public void search(){
+		homePage.searchAir();
+		wait(driver);
+		homePage.dates();
 		
 	}
+	
+	
 	
 }

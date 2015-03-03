@@ -47,43 +47,43 @@ public class Tests {
 		driver.quit();
 	}
 	
-	@Test
-	public void signIn() {
-		homePage.signIn();
-		pausa(5);
-		wait(driver);
-		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
-		wait(driver);
-		signPage.signIn("m.villarruel.test@gmail.com", "Automation");
-		
-		Assert.assertEquals(homePage.welcome(driver), true);
-		
-	}
-	
-	@Test
-	public void errorSignIn(){
-		homePage.signIn();
-		pausa(5);
-		wait(driver);
-		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
-		signPage.signIn("banana@gmail.com", "Automation");
-		Assert.assertEquals(signPage.errorSignIn(),true);
-	}
-	
-	@Test
-	public void logout(){
-		homePage.signIn();
-		pausa(4);
-		wait(driver);
-		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
-		wait(driver);
-		signPage.signIn("m.villarruel.test@gmail.com", "Automation");
-		wait(driver);
-		homePage.signout();
-		pausa(4);
-		LogoutPage logout= PageFactory.initElements(driver, LogoutPage.class);
-		Assert.assertEquals(logout.logout(),true);
-	}
+//	@Test
+//	public void signIn() {
+//		homePage.signIn();
+//		pausa(5);
+//		wait(driver);
+//		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
+//		wait(driver);
+//		signPage.signIn("m.villarruel.test@gmail.com", "Automation");
+//		
+//		Assert.assertEquals(homePage.welcome(driver), true);
+//		
+//	}
+//	
+//	@Test
+//	public void errorSignIn(){
+//		homePage.signIn();
+//		pausa(5);
+//		wait(driver);
+//		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
+//		signPage.signIn("banana@gmail.com", "Automation");
+//		Assert.assertEquals(signPage.errorSignIn(),true);
+//	}
+//	
+//	@Test
+//	public void logout(){
+//		homePage.signIn();
+//		pausa(4);
+//		wait(driver);
+//		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
+//		wait(driver);
+//		signPage.signIn("m.villarruel.test@gmail.com", "Automation");
+//		wait(driver);
+//		homePage.signout();
+//		pausa(4);
+//		LogoutPage logout= PageFactory.initElements(driver, LogoutPage.class);
+//		Assert.assertEquals(logout.logout(),true);
+//	}
 	@Test
 	public void search(){
 		homePage.searchAir();
@@ -92,9 +92,11 @@ public class Tests {
 		wait(driver);
 		homePage.dates();
 		ResultPage resultPage = PageFactory.initElements(driver, ResultPage.class);
+		pausa(3);
 		wait(driver);
-		Assert.assertEquals(resultPage.validacion01(),true);
-		Assert.assertEquals(resultPage.validacion02(),true);
+		Assert.assertEquals(resultPage.validation(),true);
+		resultPage.searchList();
+		resultPage.getFly();
 		
 	}
 }

@@ -22,8 +22,12 @@ public class ResultPage {
 	private WebElement list;
 	@FindBy(xpath="//a[@data-wt-ti='airSort-Departure time-ascending']")
 	private WebElement selectList;
-	@FindBy(xpath="//div[@class='airResultsCard optimizedCard']")
-	private List<WebElement> resultList;
+	@FindBy(xpath="//div[@data-context='airResults']")
+	private WebElement resultList;
+	@FindBy(xpath="//a[@class='buttonLink link']")
+	private List<WebElement> buttons;
+	
+	
 	
 	public boolean validacion01(){
 		if("Refine Results".equals(validateRefine.findElement(By.tagName("h2")).getText())){
@@ -65,12 +69,51 @@ public class ResultPage {
 		}
 	}
 	public void searchList(){
+		
 		list.click();
 		selectList.click();
-	}
-	public void getFly() {
-		System.out.println(resultList.get(0).getText());
 		
+	}
+	public boolean getFly() {
+		boolean val01=false;
+		boolean val02=false;
+		boolean val03=false;
+		boolean val04=false;
+		boolean val05=false;
+		List<WebElement> flyList= resultList.findElements(By.tagName("div")).get(1).findElements(By.className("primary"));
+		WebElement fly = flyList.get(0);
+//		int index=0;
+//		while(index <= fly.findElements(By.tagName("span")).size()){
+//			System.out.println("index "+index+" "+fly.findElements(By.tagName("span")).get(index).getText());
+//			index++;
+//		}
+		if("Flight details".equals(fly.findElements(By.tagName("span")).get(0).getText())){
+			val01=true;
+		}
+		if("Leave".equals(fly.findElements(By.tagName("span")).get(5).getText())){
+			val02=true;
+		}
+		if("Las Vegas".equals(fly.findElements(By.tagName("span")).get(7).getText())){
+			val03=true;
+		}
+		if("Los Angeles".equals(fly.findElements(By.tagName("span")).get(10).getText())){
+			val04=true;
+		}
+		if("Return".equals(fly.findElements(By.tagName("span")).get(18).getText())){
+			val05=true;
+		}
+		
+		if(val01&&val02&&val03&&val04&&val05){
+			//resultList.findElements(By.tagName("div")).get(1).findElements(By.className("secondary")).get(0).findElement(By.className("buttonLink link")).click();
+//			int index=0;
+//			while(index <= fly.findElements(By.tagName("span")).size()){
+//				System.out.println("index "+index+" "+buttons.get(index).getText());
+//				index++;
+//			}
+			buttons.get(1).click();
+			return true;
+		}
+		return false;
 	}
 	
 	

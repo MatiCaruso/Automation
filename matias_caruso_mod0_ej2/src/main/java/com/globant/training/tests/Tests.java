@@ -12,6 +12,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.globant.training.pages.CustomizePage;
+import com.globant.training.pages.FlyPage;
 import com.globant.training.pages.HomePage;
 import com.globant.training.pages.LogoutPage;
 import com.globant.training.pages.ResultPage;
@@ -92,11 +94,22 @@ public class Tests {
 		wait(driver);
 		homePage.dates();
 		ResultPage resultPage = PageFactory.initElements(driver, ResultPage.class);
-		pausa(3);
+		pausa(4);
 		wait(driver);
 		Assert.assertEquals(resultPage.validation(),true);
 		resultPage.searchList();
-		resultPage.getFly();
+		pausa(3);
+		wait(driver);
+		Assert.assertEquals(resultPage.getFly(),true);
+		pausa(3);
+		wait(driver);
+		FlyPage flyPage = PageFactory.initElements(driver, FlyPage.class);
+		Assert.assertEquals(flyPage.validation(),true);
+		flyPage.click();
+		pausa(3);
+		wait(driver);
+		CustomizePage customizePage = PageFactory.initElements(driver, CustomizePage.class);
+		customizePage.click();
 		
 	}
 }

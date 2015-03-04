@@ -29,10 +29,10 @@ public class HomePage {
 	private WebElement leaveDate;
 	@FindBy(xpath="//input[@name='ar.rt.returnSlice.date']")
 	private WebElement returnDate;
-	@FindBy(xpath="//span[@data-dateindex='0']")
-	private WebElement today;
+	@FindBy(xpath="//span[@data-dateindex='5']")
+	private WebElement leave;
 	@FindBy(xpath="//span[@data-dateindex='30']")
-	private WebElement daysTravel;
+	private WebElement returnDay;
 	@FindBy(xpath="//input[@value='Search Flights' and @name='search']")
 	private WebElement button;
 	
@@ -82,9 +82,9 @@ public class HomePage {
 	public void dates() {
 
 		leaveDate.click();
-		today.click();
+		leave.click();
 		returnDate.click();
-		daysTravel.click();
+		returnDay.click();
 		button.click();
 	}
 

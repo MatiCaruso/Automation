@@ -18,6 +18,7 @@ import com.globant.training.pages.HomePage;
 import com.globant.training.pages.LogoutPage;
 import com.globant.training.pages.ResultPage;
 import com.globant.training.pages.SignInPage;
+import com.globant.training.pages.TravelerPage;
 
 public class Tests {
 	WebDriver driver;
@@ -110,6 +111,10 @@ public class Tests {
 		wait(driver);
 		CustomizePage customizePage = PageFactory.initElements(driver, CustomizePage.class);
 		customizePage.click();
+		pausa(3);
+		wait(driver);
+		TravelerPage travelerPage =PageFactory.initElements(driver, TravelerPage.class);
+		travelerPage.completeData("Banana", "Puyrredon", "123545353");
 		
 	}
 }

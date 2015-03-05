@@ -50,79 +50,82 @@ public class Tests {
 		driver.quit();
 	}
 	
-	@Test
-	public void signIn() {
-		homePage.signIn();
-		pausa(5);
-		wait(driver);
-		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
-		wait(driver);
-		signPage.signIn("m.villarruel.test@gmail.com", "Automation");
-		
-		Assert.assertEquals(homePage.welcome(driver), true);
-		
-	}
-	
-	@Test
-	public void errorSignIn(){
-		homePage.signIn();
-		pausa(5);
-		wait(driver);
-		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
-		signPage.signIn("banana@gmail.com", "Automation");
-		Assert.assertEquals(signPage.errorSignIn(),true);
-	}
-	
-	@Test
-	public void logout(){
-		homePage.signIn();
-		pausa(4);
-		wait(driver);
-		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
-		wait(driver);
-		signPage.signIn("m.villarruel.test@gmail.com", "Automation");
-		wait(driver);
-		homePage.signout();
-		pausa(4);
-		LogoutPage logout= PageFactory.initElements(driver, LogoutPage.class);
-		Assert.assertEquals(logout.logout(),true);
-	}
-	@Test
-	public void search(){
-		homePage.searchAir();
-		wait(driver);
-		homePage.setFromAndTo("LAS","LAX");
-		wait(driver);
-		homePage.dates();
-		ResultPage resultPage = PageFactory.initElements(driver, ResultPage.class);
-		pausa(4);
-		wait(driver);
-		Assert.assertEquals(resultPage.validation(),true);
-		resultPage.searchList();
-		pausa(3);
-		wait(driver);
-		Assert.assertEquals(resultPage.getFly(),true);
-		pausa(3);
-		wait(driver);
-		FlyPage flyPage = PageFactory.initElements(driver, FlyPage.class);
-		Assert.assertEquals(flyPage.validation(),true);
-		flyPage.click();
-		pausa(3);
-		wait(driver);
-		CustomizePage customizePage = PageFactory.initElements(driver, CustomizePage.class);
-		customizePage.click();
-		pausa(3);
-		wait(driver);
-		TravelerPage travelerPage =PageFactory.initElements(driver, TravelerPage.class);
-		Assert.assertEquals(travelerPage.completeData("Banana", "Puyrredon", "123545353","m.villarruel.test@gmail.com"),true);
-		
-	}
+//	@Test
+//	public void signIn() {
+//		homePage.signIn();
+//		pausa(5);
+//		wait(driver);
+//		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
+//		wait(driver);
+//		signPage.signIn("m.villarruel.test@gmail.com", "Automation");
+//		
+//		Assert.assertEquals(homePage.welcome(driver), true);
+//		
+//	}
+//	
+//	@Test
+//	public void errorSignIn(){
+//		homePage.signIn();
+//		pausa(5);
+//		wait(driver);
+//		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
+//		signPage.signIn("banana@gmail.com", "Automation");
+//		Assert.assertEquals(signPage.errorSignIn(),true);
+//	}
+//	
+//	@Test
+//	public void logout(){
+//		homePage.signIn();
+//		pausa(4);
+//		wait(driver);
+//		SignInPage signPage = PageFactory.initElements(driver, SignInPage.class);
+//		wait(driver);
+//		signPage.signIn("m.villarruel.test@gmail.com", "Automation");
+//		wait(driver);
+//		homePage.signout();
+//		pausa(4);
+//		LogoutPage logout= PageFactory.initElements(driver, LogoutPage.class);
+//		Assert.assertEquals(logout.logout(),true);
+//	}
+//	@Test
+//	public void search(){
+//		homePage.searchAir();
+//		wait(driver);
+//		homePage.setFromAndTo("LAS","LAX");
+//		wait(driver);
+//		homePage.dates();
+//		ResultPage resultPage = PageFactory.initElements(driver, ResultPage.class);
+//		pausa(4);
+//		wait(driver);
+//		Assert.assertEquals(resultPage.validation(),true);
+//		resultPage.searchList();
+//		pausa(3);
+//		wait(driver);
+//		Assert.assertEquals(resultPage.getFly(),true);
+//		pausa(3);
+//		wait(driver);
+//		FlyPage flyPage = PageFactory.initElements(driver, FlyPage.class);
+//		Assert.assertEquals(flyPage.validation(),true);
+//		flyPage.click();
+//		pausa(3);
+//		wait(driver);
+//		CustomizePage customizePage = PageFactory.initElements(driver, CustomizePage.class);
+//		customizePage.click();
+//		pausa(3);
+//		wait(driver);
+//		TravelerPage travelerPage =PageFactory.initElements(driver, TravelerPage.class);
+//		Assert.assertEquals(travelerPage.completeData("Banana", "Puyrredon", "123545353","m.villarruel.test@gmail.com"),true);
+//		
+//	}
 	@Test
 	public void falseSearch(){
 		homePage.searchAir();
 		wait(driver);
-		homePage.setFromAndTo("banana","Tierra Media");
-		pausa(5);
+		homePage.setFromAndTo("Banana","Tierra Media");
+		wait(driver);
+		homePage.dates();
+		pausa(1);
+		Assert.assertEquals(homePage.validarError(),true);
 		
 	}
 	

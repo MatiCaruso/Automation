@@ -1,6 +1,5 @@
 package com.globant.training.pages;
 
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

@@ -35,6 +35,8 @@ public class HomePage {
 	private WebElement returnDay;
 	@FindBy(xpath="//input[@value='Search Flights' and @name='search']")
 	private WebElement button;
+	@FindBy(xpath="//p[@data-context='message-1000']")
+	private WebElement error;
 	
 	public void go(WebDriver driver) {
 		driver.get("http://www.cheaptickets.com/");
@@ -86,6 +88,10 @@ public class HomePage {
 		returnDate.click();
 		returnDay.click();
 		button.click();
+	}
+	
+	public boolean validarError(){
+		return "Sorry, we cannot find a match. Please check the spelling and enter a city name or airport code.".equals(error.getText());
 	}
 
 }

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41009" started-at="2015-03-05T14:51:51Z" finished-at="2015-03-05T14:52:32Z">
+  <suite name="Default suite" duration-ms="52490" started-at="2015-03-05T15:03:24Z" finished-at="2015-03-05T15:04:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41009" started-at="2015-03-05T14:51:51Z" finished-at="2015-03-05T14:52:32Z">
+    <test name="Default test" duration-ms="52490" started-at="2015-03-05T15:03:24Z" finished-at="2015-03-05T15:04:16Z">
       <class name="com.globant.training.tests.Tests">
-        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.tests.Tests@109506a]" name="before" is-config="true" duration-ms="29281" started-at="2015-03-05T11:51:51Z" finished-at="2015-03-05T11:52:21Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.tests.Tests@69adc7]" name="before" is-config="true" duration-ms="27014" started-at="2015-03-05T12:03:24Z" finished-at="2015-03-05T12:03:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="falseSearch()[pri:0, instance:com.globant.training.tests.Tests@109506a]" name="falseSearch" duration-ms="11220" started-at="2015-03-05T11:52:21Z" finished-at="2015-03-05T11:52:32Z">
+        <test-method status="PASS" signature="falseSearch()[pri:0, instance:com.globant.training.tests.Tests@69adc7]" name="falseSearch" duration-ms="24977" started-at="2015-03-05T12:03:51Z" finished-at="2015-03-05T12:04:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- falseSearch -->
-        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.tests.Tests@109506a]" name="after" is-config="true" duration-ms="496" started-at="2015-03-05T11:52:32Z" finished-at="2015-03-05T11:52:32Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.tests.Tests@69adc7]" name="after" is-config="true" duration-ms="487" started-at="2015-03-05T12:04:16Z" finished-at="2015-03-05T12:04:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

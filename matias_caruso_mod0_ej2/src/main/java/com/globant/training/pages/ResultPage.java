@@ -14,8 +14,8 @@ public class ResultPage {
 	private WebElement validateLowest;
 	@FindBy(xpath="//div[@class='bidirectionalSort']")
 	private WebElement sortBy;
-	@FindBy(xpath="//span[@class='departLocation']")
-	private WebElement depart;
+	@FindBy(xpath="//li[@data-context='home100Tab']")
+	private WebElement home;
 	@FindBy(xpath="//div[@class='matchingResults']")
 	private WebElement machingResults;
 	@FindBy(xpath="//div[@class='actionExpand titleBar hideFromNonJS trigger']")
@@ -49,7 +49,8 @@ public class ResultPage {
 		return false;
 	}
 	public boolean validacion04(){
-		if("Las Vegas, NV".equals(depart.getText())){
+		
+		if("Home".equals(home.getText())){
 			return true;
 		}
 		return false;

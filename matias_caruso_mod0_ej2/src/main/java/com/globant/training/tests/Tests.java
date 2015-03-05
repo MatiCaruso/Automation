@@ -143,9 +143,34 @@ public class Tests {
 		
 	}
 	
-	
-	
-	
+	@Test
+	public void searchSignIn(){
+		homePage.searchAir();
+		wait(driver);
+		homePage.setFromAndTo("LAS","LAX");
+		wait(driver);
+		homePage.dates();
+		ResultPage resultPage = PageFactory.initElements(driver, ResultPage.class);
+		pausa(4);
+		wait(driver);
+		Assert.assertEquals(resultPage.validation(),true);
+		resultPage.searchList();
+		pausa(3);
+		wait(driver);
+		Assert.assertEquals(resultPage.getFly(),true);
+		pausa(3);
+		wait(driver);
+		FlyPage flyPage = PageFactory.initElements(driver, FlyPage.class);
+		flyPage.click();
+		pausa(3);
+		wait(driver);
+		CustomizePage customizePage = PageFactory.initElements(driver, CustomizePage.class);
+		customizePage.click();
+		pausa(3);
+		wait(driver);
+		TravelerPage travelerPage =PageFactory.initElements(driver, TravelerPage.class);
+		travelerPage.signIn("m.villarruel.test@gmail.com", "Automation");
+	}
 	
 	
 	

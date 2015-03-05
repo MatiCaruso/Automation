@@ -27,6 +27,25 @@ public class TravelerPage {
 	private WebElement button;
 	@FindBy(name="_eventId_submit")
 	private WebElement confirm;
+	@FindBy(className="actionIcon")
+	private WebElement buttonSignIn;
+	@FindBy(name="models['userName'].userName")
+	private WebElement mailSignIn;
+	@FindBy(name="models['loginPasswordInput'].password")
+	private WebElement passSignIn;
+	@FindBy(name="_eventId_authenticate")
+	private WebElement button02;
+	
+	public void signIn(String mail,String pass){
+		this.buttonSignIn.click();
+		this.mailSignIn.sendKeys(mail);
+		this.passSignIn.sendKeys(pass);
+		this.button02.click();
+		this.button.click();
+		this.confirm.click();
+	}
+	
+	
 	
 	public boolean completeData(String firstName, String lastName, String tel, String mail){
 		this.fName.sendKeys(firstName);

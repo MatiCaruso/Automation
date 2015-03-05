@@ -5,7 +5,7 @@
     <classes>
       <class name="com.globant.training.tests.Tests">
         <methods>
-          <include name="trueSearch"/>
+          <include name="search"/>
           <include name="after"/>
           <include name="before"/>
         </methods>

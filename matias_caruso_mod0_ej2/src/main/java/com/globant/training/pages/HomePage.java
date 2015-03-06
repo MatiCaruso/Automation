@@ -37,6 +37,32 @@ public class HomePage {
 	private WebElement button;
 	@FindBy(xpath="//p[@data-context='message-1000']")
 	private WebElement error;
+	@FindBy(id="search.type.aph")
+	private WebElement hotelButton;
+	@FindBy(name="aph.leaveSlice.orig.key")
+	private WebElement hotelFrom;
+	@FindBy(name="aph.leaveSlice.dest.key")
+	private WebElement hotelTo;
+	@FindBy(name="aph.leaveSlice.date")
+	private WebElement HotelLeaveDate;
+	@FindBy(name="aph.returnSlice.date")
+	private WebElement hotelReturnDate;
+	@FindBy(name="aph.rooms[0].adlts")
+	private WebElement hotelAdults;
+	@FindBy(xpath="//input[@data-wt-ti='SearchForm-searchButton']")
+	private WebElement hotelSearch;
+	
+	public void hotelForm(String from, String to){
+		hotelButton.click();
+		hotelFrom.sendKeys(from);
+		hotelTo.sendKeys(to);
+		HotelLeaveDate.click();
+		leave.click();
+		hotelReturnDate.click();
+		returnDay.click();
+		hotelAdults.findElement(By.xpath("//option[@value='1']")).click();
+		hotelSearch.click();
+	}
 	
 	public void go(WebDriver driver) {
 		driver.get("http://www.cheaptickets.com/");

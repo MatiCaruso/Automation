@@ -15,6 +15,8 @@ import org.testng.annotations.Test;
 import com.globant.training.pages.CustomizePage;
 import com.globant.training.pages.FlyPage;
 import com.globant.training.pages.HomePage;
+import com.globant.training.pages.HotelConfirmation;
+import com.globant.training.pages.HotelPage;
 import com.globant.training.pages.LogoutPage;
 import com.globant.training.pages.ResultPage;
 import com.globant.training.pages.SignInPage;
@@ -171,8 +173,26 @@ public class Tests {
 		TravelerPage travelerPage =PageFactory.initElements(driver, TravelerPage.class);
 		travelerPage.signIn("m.villarruel.test@gmail.com", "Automation");
 	}
-	
-	
-	
-	
+	@Test
+	public void hotel(){
+		homePage.hotelForm("LAS", "LAX");
+		pausa(5);
+		wait(driver);
+		HotelPage hotelPage =PageFactory.initElements(driver, HotelPage.class);
+		Assert.assertEquals(hotelPage.validation(),true);
+		hotelPage.getStars();
+		pausa(2);
+		wait(driver);
+		Assert.assertEquals(hotelPage.validaStars(),true);
+		hotelPage.selectHotel();
+		pausa(5);
+		wait(driver);
+		HotelConfirmation hotelConfirmation =PageFactory.initElements(driver, HotelConfirmation.class);
+		Assert.assertEquals(hotelConfirmation.validation(), true);
+	}
+		
 }
+	
+	
+	
+

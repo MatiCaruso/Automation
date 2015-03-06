@@ -5,7 +5,7 @@
     <classes>
       <class name="com.globant.training.tests.Tests">
         <methods>
-          <include name="search"/>
+          <include name="hotel"/>
           <include name="after"/>
           <include name="before"/>
         </methods>

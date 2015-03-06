@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="180990" started-at="2015-03-05T20:13:51Z" finished-at="2015-03-05T20:16:52Z">
+  <suite name="Default suite" duration-ms="138184" started-at="2015-03-06T18:57:46Z" finished-at="2015-03-06T19:00:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="180990" started-at="2015-03-05T20:13:51Z" finished-at="2015-03-05T20:16:52Z">
+    <test name="Default test" duration-ms="138184" started-at="2015-03-06T18:57:46Z" finished-at="2015-03-06T19:00:04Z">
       <class name="com.globant.training.tests.Tests">
-        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.tests.Tests@1ec459b]" name="before" is-config="true" duration-ms="31473" started-at="2015-03-05T17:13:51Z" finished-at="2015-03-05T17:14:23Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.globant.training.tests.Tests@12b523c]" name="before" is-config="true" duration-ms="34293" started-at="2015-03-06T15:57:46Z" finished-at="2015-03-06T15:58:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="search()[pri:0, instance:com.globant.training.tests.Tests@1ec459b]" name="search" duration-ms="148895" started-at="2015-03-05T17:14:23Z" finished-at="2015-03-05T17:16:51Z">
+        <test-method status="PASS" signature="hotel()[pri:0, instance:com.globant.training.tests.Tests@12b523c]" name="hotel" duration-ms="102436" started-at="2015-03-06T15:58:20Z" finished-at="2015-03-06T16:00:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.tests.Tests@1ec459b]" name="after" is-config="true" duration-ms="608" started-at="2015-03-05T17:16:51Z" finished-at="2015-03-05T17:16:52Z">
+        </test-method> <!-- hotel -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.tests.Tests@12b523c]" name="after" is-config="true" duration-ms="1441" started-at="2015-03-06T16:00:03Z" finished-at="2015-03-06T16:00:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

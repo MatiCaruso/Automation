@@ -52,7 +52,7 @@ public class Tests {
 		driver.quit();
 	}
 	
-	@Test
+	@Test(description="ID=001, loguea al user y verifica que se encuentre logueado")
 	public void signIn() {
 		homePage.signIn();
 		pausa(5);
@@ -65,7 +65,7 @@ public class Tests {
 		
 	}
 	
-	@Test
+	@Test(description="ID=002, loguea user y contraseña incorrecto y verifica el error")
 	public void errorSignIn(){
 		homePage.signIn();
 		pausa(5);
@@ -75,7 +75,7 @@ public class Tests {
 		Assert.assertEquals(signPage.errorSignIn(),true);
 	}
 	
-	@Test
+	@Test(description="ID=003, desloguea al user y verifica que se encuentre deslogueado")
 	public void logout(){
 		homePage.signIn();
 		pausa(4);
@@ -89,7 +89,7 @@ public class Tests {
 		LogoutPage logout= PageFactory.initElements(driver, LogoutPage.class);
 		Assert.assertEquals(logout.logout(),true);
 	}
-	@Test
+	@Test(description="ID=004, busca y selecciona vuelo, agrega la informacion del pasajero")
 	public void search(){
 		homePage.searchAir();
 		wait(driver);
@@ -119,18 +119,18 @@ public class Tests {
 		Assert.assertEquals(travelerPage.completeData("Banana", "Puyrredon", "123545353","m.villarruel.test@gmail.com"),true);
 		
 	}
-	@Test
+	@Test(description="ID=005, busqueda de vuelo negativa")
 	public void falseSearch(){
 		homePage.searchAir();
 		wait(driver);
-		homePage.setFromAndTo("Banana","Tierra Media");
+		homePage.setFromAndTo("La Comarca","Mordor");
 		wait(driver);
 		homePage.dates();
 		pausa(1);
 		Assert.assertEquals(homePage.validarError(),true);
 		
 	}
-	@Test
+	@Test(description="ID=006, busqueda de vuelo positiva")
 	public void trueSearch(){
 		homePage.searchAir();
 		wait(driver);
@@ -145,7 +145,7 @@ public class Tests {
 		
 	}
 	
-	@Test
+	@Test(description="ID=007, busca y selecciona vuelo y se loguea en la pagina de completar información del pasajero")
 	public void searchSignIn(){
 		homePage.searchAir();
 		wait(driver);
@@ -173,7 +173,7 @@ public class Tests {
 		TravelerPage travelerPage =PageFactory.initElements(driver, TravelerPage.class);
 		travelerPage.signIn("m.villarruel.test@gmail.com", "Automation");
 	}
-	@Test
+	@Test(description="ID=008, busca y selecciona hotel y vuelo")
 	public void hotel(){
 		homePage.hotelForm("LAS", "LAX");
 		pausa(5);

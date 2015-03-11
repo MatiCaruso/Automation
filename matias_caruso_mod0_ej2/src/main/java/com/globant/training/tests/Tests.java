@@ -3,9 +3,14 @@ package com.globant.training.tests;
 
 
 import java.util.concurrent.TimeUnit;
+import java.net.URL;
+import java.net.MalformedURLException;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -39,12 +44,17 @@ public class Tests {
 	}
 	
 	@BeforeMethod
-	public void before() {
+	public void before() throws MalformedURLException{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\matias.caruso\\Downloads\\chromedriver.exe");
+//		driver = new ChromeDriver();
 		driver = new FirefoxDriver();
+//		DesiredCapabilities capability = DesiredCapabilities.firefox();
+//		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
 		wait(driver);
 		homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.go(driver);
 		driver.manage().window().maximize();
+		pausa(5);
 	}
 	
 	@AfterMethod
@@ -91,17 +101,18 @@ public class Tests {
 	}
 	@Test(description="ID=004, busca y selecciona vuelo, agrega la informacion del pasajero")
 	public void search(){
+		pausa(5);
 		homePage.searchAir();
 		wait(driver);
 		homePage.setFromAndTo("LAS","LAX");
 		wait(driver);
 		homePage.dates();
 		ResultPage resultPage = PageFactory.initElements(driver, ResultPage.class);
-		pausa(4);
+		pausa(25);
 		wait(driver);
 		Assert.assertEquals(resultPage.validation(),true);
 		resultPage.searchList();
-		pausa(3);
+		pausa(10);
 		wait(driver);
 		Assert.assertEquals(resultPage.getFly(),true);
 		pausa(3);

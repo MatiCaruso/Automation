@@ -13,7 +13,7 @@ public class TravelerPage {
 	private WebElement lName;
 	@FindBy(xpath="//input[@type='tel']")
 	private WebElement tel;
-	@FindBy(xpath="//option[@value='M']")
+	@FindBy(xpath="//div[@class='genderDateOfBirthInput']")
 	private WebElement gender;
 	@FindBy(name="models['travelersInput'].travelers[0].tsaInfoInput.dateOfBirth.dobMonth")
 	private WebElement month;
@@ -23,7 +23,7 @@ public class TravelerPage {
 	private WebElement year;
 	@FindBy(name="models['bookingInput'].email.emailAddress")
 	private WebElement mail;
-	@FindBy(name="models['addInsurance'].insProductGroupContentRequired[0].selectedProductIndex")
+	@FindBy(xpath="//div[@class='insDecline']")
 	private WebElement button;
 	@FindBy(name="_eventId_submit")
 	private WebElement confirm;
@@ -51,14 +51,15 @@ public class TravelerPage {
 		this.fName.sendKeys(firstName);
 		this.lName.sendKeys(lastName);
 		this.tel.sendKeys(tel);
-		this.gender.click();
-		this.month.click();
+		this.gender.findElement(By.tagName("div")).click();
+		this.gender.findElement(By.xpath("//option[@value='M']")).click();
+//		this.month.click();
 		this.month.findElement(By.xpath("//option[@value='21']")).click();
-		this.day.click();
+//		this.day.click();
 		this.day.findElement(By.xpath("//option[@value='6']")).click();
 		this.year.click();
 		this.mail.sendKeys(mail);
-		this.button.click();
+		this.button.findElement(By.tagName("div")).click();
 		this.confirm.click();
 		return true;
 		

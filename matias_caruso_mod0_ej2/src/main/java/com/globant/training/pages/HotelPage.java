@@ -77,9 +77,8 @@ public class HotelPage {
 		int max = stars.size();
 		boolean val=false;
 		while(index < max){
-			
-			if (stars.get(index).findElement(By.xpath("//img[@src='http://www.tnetnoc.com/static/28.154.1/image/global/stars-5.png']")).isDisplayed()
-				|| stars.get(index).findElement(By.xpath("//img[@src='http://www.tnetnoc.com/static/28.154.1/image/global/stars-4.png']")).isDisplayed())
+			if (stars.get(index).findElement(By.xpath("//img[@data-context='stars-5']")).isDisplayed()
+				|| stars.get(index).findElement(By.xpath("//img[@data-context='stars-4']")).isDisplayed())
 			{
 				val =true;
 			}else{		
@@ -90,7 +89,6 @@ public class HotelPage {
 		return val;
 	}
 	public void selectHotel(){
-		
 		confirmHotel.findElements(By.xpath("//a[@data-context='selectButton']")).get(0).click();
 		
 	}

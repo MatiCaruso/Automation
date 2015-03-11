@@ -19,7 +19,7 @@ public class HomePage {
 	private WebElement welcome;
 	@FindBy(className="signOutLink")
 	private WebElement signout;
-	@FindBy(className="needsclick")
+	@FindBy(id="search.type.air")
 	private WebElement searchAir;
 	@FindBy(xpath="//input[@name='ar.rt.leaveSlice.orig.key']")
 	private WebElement from;
@@ -53,7 +53,7 @@ public class HomePage {
 	private WebElement hotelSearch;
 	
 	public void hotelForm(String from, String to){
-		hotelButton.click();
+		hotelButton.findElements(By.xpath("//div[@class='button needsclick']")).get(5).click();
 		hotelFrom.sendKeys(from);
 		hotelTo.sendKeys(to);
 		HotelLeaveDate.click();
@@ -99,7 +99,7 @@ public class HomePage {
 	}
 
 	public void searchAir() {
-		searchAir.click();
+		searchAir.findElement(By.xpath("//div[@class='button needsclick']")).click();
 	}
 
 	public void setFromAndTo(String from, String to) {

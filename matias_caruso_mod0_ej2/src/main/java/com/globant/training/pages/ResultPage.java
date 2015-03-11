@@ -18,7 +18,7 @@ public class ResultPage {
 	private WebElement home;
 	@FindBy(xpath="//div[@class='matchingResults']")
 	private WebElement machingResults;
-	@FindBy(xpath="//div[@class='actionExpand titleBar hideFromNonJS trigger']")
+	@FindBy(xpath="//div[@data-context='selectedSortLink-AIR_PRICE-ascending']")
 	private WebElement list;
 	@FindBy(xpath="//a[@data-wt-ti='airSort-Departure time-ascending']")
 	private WebElement selectList;
@@ -70,7 +70,6 @@ public class ResultPage {
 		}
 	}
 	public void searchList(){
-		
 		list.click();
 		selectList.click();
 		

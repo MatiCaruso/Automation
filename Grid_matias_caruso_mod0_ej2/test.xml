@@ -1,0 +1,46 @@
+<suite name="suit 1" verbose="2" parallel="tests" thread-count="4">
+
+	<test name="Run on FF">
+		<parameter name="browser" value="FF"></parameter>
+		<classes>
+			<class name="com.globant.training.tests.Tests"></class>
+		</classes>
+		<methods>
+			<include name="falseSearch"></include>
+		</methods>
+	</test>
+
+
+	<test name="Run on FF2">
+		<parameter name="browser" value="FF"></parameter>
+		<classes>
+			<class name="com.globant.training.tests.Tests"></class>
+		</classes>
+		<methods>
+			<include name="searchSignIn"></include>
+		</methods>
+	</test>
+
+
+	<test name="Run on FF3">
+		<parameter name="browser" value="FF"></parameter>
+		<classes>
+			<class name="com.globant.training.tests.Tests"></class>
+		</classes>
+		<methods>
+			<include name="trueSearch"></include>
+		</methods>
+	</test>
+
+
+	<test name="Run on Chrome">
+		<parameter name="browser" value="CH"></parameter>
+		<classes>
+			<class name="com.globant.training.tests.Tests"></class>
+		</classes>
+		<methods>
+			<include name="hotel"></include>
+		</methods>
+	</test>
+
+</suite>

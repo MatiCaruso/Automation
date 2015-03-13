@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" verbose="2" name="Failed suite [suit 1]" parallel="tests">
+  <parameter name="browser" value="CH"/>
+  <test name="Run on FF2(failed)" parallel="tests">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="com.globant.training.tests.Tests">
+        <methods>
+          <include name="searchSignIn"/>
+          <include name="after"/>
+          <include name="after"/>
+          <include name="after"/>
+          <include name="after"/>
+          <include name="before"/>
+          <include name="before"/>
+          <include name="before"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.globant.training.tests.Tests -->
+    </classes>
+  </test> <!-- Run on FF2(failed) -->
+</suite> <!-- Failed suite [suit 1] -->

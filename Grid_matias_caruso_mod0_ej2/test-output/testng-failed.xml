@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.globant.training.tests.Tests">
+        <methods>
+          <include name="logout"/>
+          <include name="errorSignIn"/>
+          <include name="signIn"/>
+          <include name="searchSignIn"/>
+          <include name="search"/>
+          <include name="trueSearch"/>
+          <include name="hotel"/>
+          <include name="falseSearch"/>
+        </methods>
+      </class> <!-- com.globant.training.tests.Tests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

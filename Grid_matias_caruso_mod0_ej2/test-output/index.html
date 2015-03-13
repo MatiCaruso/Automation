@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-suit_1">
+              <span class="suite-name border-passed">suit 1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-suit_1">
+                    <span>C:\Users\matias.caruso\Desktop\Training\Grid_matias_caruso_mod0_ej2\test.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-suit_1">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-suit_1">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-suit_1">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-suit_1">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-suit_1">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-suit_1">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-suit_1" class="hide-methods passed suite-suit_1"> (hide)</a> <!-- hide-methods passed suite-suit_1 -->
+                      <a href="#" panel-name="suite-suit_1" class="show-methods passed suite-suit_1"> (show)</a> <!-- show-methods passed suite-suit_1 -->
+                    </span>
+                    <div class="method-list-content passed suite-suit_1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suit_1" title="com.globant.training.tests.Tests" hash-for-method="falseSearch">falseSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suit_1" title="com.globant.training.tests.Tests" hash-for-method="hotel">hotel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suit_1" title="com.globant.training.tests.Tests" hash-for-method="searchSignIn">searchSignIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suit_1" title="com.globant.training.tests.Tests" hash-for-method="trueSearch">trueSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-suit_1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-suit_1" class="panel suit_1">
+          <div class="suite-suit_1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.globant.training.tests.Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="falseSearch">
+                  </a> <!-- falseSearch -->
+                  <span class="method-name">falseSearch</span>
+                  <em>
+(ID=005, busqueda de vuelo negativa)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hotel">
+                  </a> <!-- hotel -->
+                  <span class="method-name">hotel</span>
+                  <em>
+(ID=008, busca y selecciona hotel y vuelo)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchSignIn">
+                  </a> <!-- searchSignIn -->
+                  <span class="method-name">searchSignIn</span>
+                  <em>
+(ID=007, busca y selecciona vuelo y se loguea en la pagina de completar información del pasajero)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="trueSearch">
+                  </a> <!-- trueSearch -->
+                  <span class="method-name">trueSearch</span>
+                  <em>
+(ID=006, busqueda de vuelo positiva)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suit_1-class-passed -->
+        </div> <!-- panel suit_1 -->
+        <div panel-name="test-xml-suit_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\matias.caruso\Desktop\Training\Grid_matias_caruso_mod0_ej2\test.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; verbose=&quot;2&quot; name=&quot;suit 1&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;Run on FF&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;FF&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.globant.training.tests.Tests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;falseSearch&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.globant.training.tests.Tests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run on FF --&gt;
+  &lt;test name=&quot;Run on FF2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;FF&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.globant.training.tests.Tests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;searchSignIn&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.globant.training.tests.Tests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run on FF2 --&gt;
+  &lt;test name=&quot;Run on FF3&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;FF&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.globant.training.tests.Tests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;trueSearch&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.globant.training.tests.Tests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run on FF3 --&gt;
+  &lt;test name=&quot;Run on Chrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;CH&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.globant.training.tests.Tests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;hotel&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.globant.training.tests.Tests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run on Chrome --&gt;
+&lt;/suite&gt; &lt;!-- suit 1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-suit_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for suit 1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Run on FF (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Run on FF2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Run on FF3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Run on Chrome (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-suit_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for suit 1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-suit_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for suit 1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_suit_1');
+function tableData_suit_1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchSignIn')
+data.setCell(0, 2, 'com.globant.training.tests.Tests')
+data.setCell(0, 3, 162174);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'hotel')
+data.setCell(1, 2, 'com.globant.training.tests.Tests')
+data.setCell(1, 3, 66484);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'trueSearch')
+data.setCell(2, 2, 'com.globant.training.tests.Tests')
+data.setCell(2, 3, 47192);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'falseSearch')
+data.setCell(3, 2, 'com.globant.training.tests.Tests')
+data.setCell(3, 3, 34733);
+window.suiteTableData['suit_1']= { tableData: data, tableDiv: 'times-div-suit_1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-suit_1">
+              </div> <!-- times-div-suit_1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-suit_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for suit 1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-suit_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">28 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.globant.training.tests.Tests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">searchSignIn</span>
+                <br/>
+                <span class="ignored-method-name">signIn</span>
+                <br/>
+                <span class="ignored-method-name">searchSignIn</span>
+                <br/>
+                <span class="ignored-method-name">signIn</span>
+                <br/>
+                <span class="ignored-method-name">signIn</span>
+                <br/>
+                <span class="ignored-method-name">searchSignIn</span>
+                <br/>
+                <span class="ignored-method-name">signIn</span>
+                <br/>
+                <span class="ignored-method-name">falseSearch</span>
+                <br/>
+                <span class="ignored-method-name">falseSearch</span>
+                <br/>
+                <span class="ignored-method-name">falseSearch</span>
+                <br/>
+                <span class="ignored-method-name">errorSignIn</span>
+                <br/>
+                <span class="ignored-method-name">errorSignIn</span>
+                <br/>
+                <span class="ignored-method-name">errorSignIn</span>
+                <br/>
+                <span class="ignored-method-name">errorSignIn</span>
+                <br/>
+                <span class="ignored-method-name">search</span>
+                <br/>
+                <span class="ignored-method-name">search</span>
+                <br/>
+                <span class="ignored-method-name">search</span>
+                <br/>
+                <span class="ignored-method-name">search</span>
+                <br/>
+                <span class="ignored-method-name">trueSearch</span>
+                <br/>
+                <span class="ignored-method-name">trueSearch</span>
+                <br/>
+                <span class="ignored-method-name">trueSearch</span>
+                <br/>
+                <span class="ignored-method-name">hotel</span>
+                <br/>
+                <span class="ignored-method-name">hotel</span>
+                <br/>
+                <span class="ignored-method-name">hotel</span>
+                <br/>
+                <span class="ignored-method-name">logout</span>
+                <br/>
+                <span class="ignored-method-name">logout</span>
+                <br/>
+                <span class="ignored-method-name">logout</span>
+                <br/>
+                <span class="ignored-method-name">logout</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-suit_1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.globant.training.tests.Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">before(FF)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">before(FF)</span>
+                <span class="method-start">5 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">before(FF)</span>
+                <span class="method-start">6 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">before(CH)</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hotel</span>
+                <span class="method-start">10317 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">trueSearch</span>
+                <span class="method-start">42044 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchSignIn</span>
+                <span class="method-start">46996 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">falseSearch</span>
+                <span class="method-start">56272 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">76801 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">89236 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">91006 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">209170 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

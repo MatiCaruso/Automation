@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
+    <line>
+      <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+    </line>
+  </reporter-output>
+  <suite name="suit 1" duration-ms="209867" started-at="2015-03-13T14:19:38Z" finished-at="2015-03-13T14:23:07Z">
+    <groups>
+    </groups>
+    <test name="Run on Chrome" duration-ms="78921" started-at="2015-03-13T14:19:38Z" finished-at="2015-03-13T14:20:57Z">
+      <class name="com.globant.training.tests.Tests">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:com.globant.training.tests.Tests@11ba6f]" name="before" is-config="true" duration-ms="10305" started-at="2015-03-13T11:19:38Z" finished-at="2015-03-13T11:19:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="hotel()[pri:0, instance:com.globant.training.tests.Tests@11ba6f]" name="hotel" duration-ms="66484" started-at="2015-03-13T11:19:48Z" description="ID=008, busca y selecciona hotel y vuelo" finished-at="2015-03-13T11:20:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hotel -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.tests.Tests@11ba6f]" name="after" is-config="true" duration-ms="2130" started-at="2015-03-13T11:20:54Z" finished-at="2015-03-13T11:20:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.globant.training.tests.Tests -->
+    </test> <!-- Run on Chrome -->
+    <test name="Run on FF3" duration-ms="90116" started-at="2015-03-13T14:19:38Z" finished-at="2015-03-13T14:21:08Z">
+      <class name="com.globant.training.tests.Tests">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:com.globant.training.tests.Tests@c21a68]" name="before" is-config="true" duration-ms="42038" started-at="2015-03-13T11:19:38Z" finished-at="2015-03-13T11:20:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="trueSearch()[pri:0, instance:com.globant.training.tests.Tests@c21a68]" name="trueSearch" duration-ms="47192" started-at="2015-03-13T11:20:20Z" description="ID=006, busqueda de vuelo positiva" finished-at="2015-03-13T11:21:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trueSearch -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.tests.Tests@c21a68]" name="after" is-config="true" duration-ms="885" started-at="2015-03-13T11:21:07Z" finished-at="2015-03-13T11:21:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.globant.training.tests.Tests -->
+    </test> <!-- Run on FF3 -->
+    <test name="Run on FF" duration-ms="91471" started-at="2015-03-13T14:19:38Z" finished-at="2015-03-13T14:21:09Z">
+      <class name="com.globant.training.tests.Tests">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:com.globant.training.tests.Tests@135f92f]" name="before" is-config="true" duration-ms="56267" started-at="2015-03-13T11:19:38Z" finished-at="2015-03-13T11:20:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="falseSearch()[pri:0, instance:com.globant.training.tests.Tests@135f92f]" name="falseSearch" duration-ms="34733" started-at="2015-03-13T11:20:34Z" description="ID=005, busqueda de vuelo negativa" finished-at="2015-03-13T11:21:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- falseSearch -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.tests.Tests@135f92f]" name="after" is-config="true" duration-ms="469" started-at="2015-03-13T11:21:09Z" finished-at="2015-03-13T11:21:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.globant.training.tests.Tests -->
+    </test> <!-- Run on FF -->
+    <test name="Run on FF2" duration-ms="209867" started-at="2015-03-13T14:19:38Z" finished-at="2015-03-13T14:23:07Z">
+      <class name="com.globant.training.tests.Tests">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:com.globant.training.tests.Tests@b4dcd9]" name="before" is-config="true" duration-ms="46996" started-at="2015-03-13T11:19:38Z" finished-at="2015-03-13T11:20:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Se Entro a la Pagina Correctamente
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="searchSignIn()[pri:0, instance:com.globant.training.tests.Tests@b4dcd9]" name="searchSignIn" duration-ms="162174" started-at="2015-03-13T11:20:25Z" description="ID=007, busca y selecciona vuelo y se loguea en la pagina de completar información del pasajero" finished-at="2015-03-13T11:23:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSignIn -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.globant.training.tests.Tests@b4dcd9]" name="after" is-config="true" duration-ms="684" started-at="2015-03-13T11:23:07Z" finished-at="2015-03-13T11:23:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.globant.training.tests.Tests -->
+    </test> <!-- Run on FF2 -->
+  </suite> <!-- suit 1 -->
+</testng-results>
